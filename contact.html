@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Jeremy Hernández Calderón</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #f9f9f9;
+        }
+
+        label {
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        input, textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            background-color: #ff9800;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #e68900;
+        }
+
+        .contact-info {
+            margin-bottom: 20px;
+        }
+
+        .contact-info ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .contact-info li {
+            margin-bottom: 10px;
+            font-size: 16px;
+            color: #333;
+            display: flex;
+            align-items: center;
+        }
+
+        .contact-info li i {
+            margin-right: 10px;
+            font-size: 20px;
+            color: #ff9800;
+        }
+
+        .contact-info a {
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .contact-info a:hover {
+            color: #ff9800;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="about.html">Sobre Mí</a></li>
+                <li><a href="projects.html">Proyectos</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="contact">
+            <div class="container">
+                <h1>Contacto</h1>
+                <p>¡Estoy aquí para ayudarte! Puedes contactarme a través de los siguientes medios:</p>
+                <div class="contact-info">
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> Email: <a href="mailto:jeremy.hernandez@mail.udp.cl">jeremy.hernandez@mail.udp.cl</a></li>
+                        <li><i class="fab fa-linkedin"></i> LinkedIn: <a href="https://www.linkedin.com/in/jeremy-hernandez-calderon-261020217" target="_blank" rel="noopener noreferrer">Pincha Aqui</a></li>
+                        <li><i class="fab fa-github"></i> GitHub: <a href="https://github.com/JDrakke" target="_blank" rel="noopener noreferrer">Pincha Aqui</a></li>
+                    </ul>
+                </div>
+                <form action="mailto:jeremy.hernandez@mail.udp.cl" method="post" enctype="text/plain">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="message">Mensaje:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Jeremy Hernández Calderón</p>
+                <p>Contacto: <a href="mailto:jeremy.hernandez@mail.udp.cl">jeremy.hernandez@mail.udp.cl</a></p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/jeremy-hernandez-calderon-261020217" target="_blank" title="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/JDrakke" target="_blank" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
